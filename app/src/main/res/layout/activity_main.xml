@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.asus.bmi.MainActivity">
+
+    <TextView
+        android:text="TÍNH CHỈ SỐ BMI CỦA BẠN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/textViewTieuDe" />
+
+    <TextView
+        android:text="Nhập tên:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTieuDe"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="24dp"
+        android:id="@+id/textViewTen" />
+
+    <TextView
+        android:text="Chiều cao:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textViewChieuCao"
+        android:layout_below="@+id/textViewTen"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Cân nặng:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:id="@+id/textViewCanNang"
+        android:layout_below="@+id/textViewChieuCao"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editTextChieuCao"
+        android:layout_alignBaseline="@+id/textViewChieuCao"
+        android:layout_alignBottom="@+id/textViewChieuCao"
+        android:layout_alignLeft="@+id/editTextTen"
+        android:layout_alignStart="@+id/editTextTen" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editTextTen"
+        android:layout_alignBaseline="@+id/textViewTen"
+        android:layout_alignBottom="@+id/textViewTen"
+        android:layout_alignLeft="@+id/textViewTieuDe"
+        android:layout_alignStart="@+id/textViewTieuDe" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/editTextChieuCao"
+        android:layout_alignLeft="@+id/editTextChieuCao"
+        android:layout_alignStart="@+id/editTextChieuCao"
+        android:id="@+id/editTextCanNang" />
+
+    <Button
+        android:text="BMI"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextCanNang"
+        android:id="@+id/buttonBMI"
+        android:layout_alignLeft="@+id/editTextCanNang"
+        android:layout_alignStart="@+id/editTextCanNang"
+        android:layout_width="wrap_content" />
+
+    <TextView
+        android:text="BMI="
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewBMI"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewKetLuan"
+        android:layout_alignLeft="@+id/buttonBMI"
+        android:layout_alignStart="@+id/buttonBMI"
+        android:id="@+id/textViewKQBMI"
+        android:layout_alignRight="@+id/editTextCanNang"
+        android:layout_alignEnd="@+id/editTextCanNang" />
+
+    <TextView
+        android:text="Kết luận:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textViewKetLuan"
+        android:layout_below="@+id/textViewBMI"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewKetLuan"
+        android:layout_alignLeft="@+id/textViewKQBMI"
+        android:layout_alignStart="@+id/textViewKQBMI"
+        android:id="@+id/textViewKQKetLuan"
+        android:layout_alignRight="@+id/textViewKQBMI"
+        android:layout_alignEnd="@+id/textViewKQBMI" />
+</RelativeLayout>
